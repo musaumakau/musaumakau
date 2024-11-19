@@ -21,7 +21,7 @@
 </div>
 
 ### :man_technologist: About Me :
-I'm a DevOps Engineer with a knack for problem-solving and a love for automation. I enjoy designing efficient workflows, optimizing systems, and exploring new technologies to stay ahead in the ever-evolving tech landscape.
+I'm a DevOps Engineer with a knack for problem solving and a love for automation. I enjoy designing efficient workflows, optimizing systems, and exploring new technologies to stay ahead in the ever evolving tech landscape.
 
 - :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](www.linkedin.com/in/juan-musau)
 
