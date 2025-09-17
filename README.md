@@ -71,9 +71,10 @@ I'm a DevOps Engineer with a knack for problem solving and a love for automation
 <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/>
 </div>
 
-### :fire: My Stats :
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=musaumakau&theme=dark&background=000000)](https://git.io/streak-stats)
+### 💡 Latest Articles :
+- 🏗️ [Building Enterprise Infrastructure Governance](https://medium.com/@musaujoseph8/building-enterprise-infrastructure-governance-how-we-eliminated-cost-overruns-and-compliance-gaps-0d8dd6772110) - How we eliminated cost overruns with Terraform, OPA, and Infracost
+- 📝 More DevOps content coming soon on [Medium](https://medium.com/@musaujoseph8)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=musaumakau&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+---
 
-[![musaumakau's GitHub stats](https://github-readme-stats.vercel.app/api?username=musaumakau&show_icons=true&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+*⭐ If you find my projects useful, please consider giving them a star!*
