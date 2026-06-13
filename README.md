@@ -58,7 +58,6 @@ Terragrunt-based multi-environment deployment repo:
 
 - **IDP lab** -- local-first Internal Developer Platform (Docker Compose, FastAPI, Backstage-compatible service catalog) exploring self-service infrastructure patterns
 - **Gumroad store** -- DevOps tools and templates for engineers: [makau5.gumroad.com](https://makau5.gumroad.com)
-- **Writing** -- second Medium article in progress covering verified deployment pipelines and manifest-as-contract
 
 ---
 
@@ -84,16 +83,16 @@ Terragrunt-based multi-environment deployment repo:
 
 ## Latest writing
 
-- [Building Enterprise Infrastructure Governance](https://medium.com/@musaujoseph8/building-enterprise-infrastructure-governance-how-we-eliminated-cost-overruns-and-compliance-gaps-0d8dd6772110) -- how we eliminated cost overruns with Terraform, OPA, and Infracost
-- More on [Medium](https://medium.com/@musaujoseph8)
+- [Your CI Pipeline Has the Same Problems as Badly Written Software](https://medium.com/@musaujoseph8/how-i-built-a-production-grade-terraform-ci-cd-pipeline-that-actually-catches-problems-before-they-f6b6cc85ee5d) -- how I refactored a 300-line GitHub Actions monolith into reusable workflows and a thin orchestrator
+- [The Plan You Reviewed Is the Plan That Gets Applied](https://medium.com/@musaujoseph8/the-plan-you-reviewed-is-the-plan-that-gets-applied-41440cf6285f) -- manifest-as-contract pattern for verified Terraform deployments
+- [How We Eliminated Cloud Cost Overruns Using Terraform + Policy-as-Code](https://medium.com/@musaujoseph8/building-enterprise-infrastructure-governance-how-we-eliminated-cost-overruns-and-compliance-gaps-0d8dd6772110) -- OPA gates, Infracost, and automated governance in CI/CD
 
 ---
 
-## GitHub stats
+## GitHub activity
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=musaumakau&show_icons=true&theme=default&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=musaumakau&layout=compact&theme=default"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=musaumakau&theme=default&hide_border=true" alt="GitHub streak"/>
 </div>
 
 ---
