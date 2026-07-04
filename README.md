@@ -31,6 +31,8 @@ Based in Nairobi. 5+ years working across AWS, Kubernetes, and Terraform at scal
 
 **Production-grade GitOps** with ArgoCD on EKS, HashiCorp Vault for secrets, Terragrunt for environment promotion, and environment protection gates for Staging and Prod.
 
+**Keyless, zero-key-storage container signing** end to end: GitHub OIDC → Fulcio → Rekor → Kubernetes admission control, with two independent enforcement engines (Kyverno and Gatekeeper+Ratify) implemented, tested, and compared. Found and fixed a real admission-control bypass (unsigned init containers slipping past signature verification) through systematic edge-case testing, not just happy-path demos.
+
 ---
 
 ## Featured projects
@@ -51,6 +53,15 @@ Terragrunt-based multi-environment deployment repo:
 - Destroy workflow with confirmation guards
 - Environment protection gates enforced via GitHub environments (Staging, Prod)
 - Manifest-as-contract pattern for verified deployments
+
+### [supply-chain-security](https://github.com/musaumakau/supply-chain-security)
+Software supply chain security pipeline: every image that reaches Kubernetes is scanned, signed, attested, and verified before admission.
+- Cosign keyless signing via GitHub OIDC -- no private keys stored anywhere, signatures anchored in the public Rekor transparency log
+- SPDX SBOM and SLSA provenance generated and attached as Cosign attestations, verified at admission time
+- Two enforcement engines implemented and documented side by side: Kyverno (native verification) and Gatekeeper + Ratify (delegated verification via external data provider)
+- Full test matrix with raw evidence, not just policy YAML: signed/unsigned/tampered images, namespace exclusion boundaries, multi-container pods, and init containers
+- A real bypass found and fixed during testing -- unsigned init containers initially skipped verification entirely; root-caused and closed with before/after proof committed to the repo
+- Documented troubleshooting notes covering every non-obvious failure hit standing up Ratify (TLS cert rotation, stale CRD merges, field-name mismatches, a silent Rego bug that made violations under-report)
 
 ---
 
@@ -77,7 +88,7 @@ Terragrunt-based multi-environment deployment repo:
   <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title="Linux" width="40" height="40"/>
 </div>
 
-**Also:** GitHub Actions, ArgoCD, HashiCorp Vault, Terragrunt, OPA/Gatekeeper, Infracost, tfsec, checkov, trivy, Karpenter, Gitleaks
+**Also:** GitHub Actions, ArgoCD, HashiCorp Vault, Terragrunt, OPA/Gatekeeper, Ratify, Sigstore/Cosign, Infracost, tfsec, checkov, trivy, semgrep, Karpenter, Gitleaks
 
 ---
 
